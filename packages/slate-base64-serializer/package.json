@@ -1,5 +1,6 @@
 {
   "name": "slate-base64-serializer",
+  "private": true,
   "description": "A Base64 serializer for Slate editors.",
   "version": "0.2.97",
   "license": "MIT",

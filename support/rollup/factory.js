@@ -18,6 +18,7 @@ import { startCase } from 'lodash'
  */
 
 function configure(pkg, env, target) {
+  pkg.name = pkg.name.replace('@nxtedition/', '')
   const isProd = env === 'production'
   const isUmd = target === 'umd'
   const isModule = target === 'module'

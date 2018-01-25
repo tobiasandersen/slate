@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -104,7 +107,7 @@
     "lint:prettier": "prettier --list-different '**/*.{md,json,css}'",
     "open": "open http://localhost:8080",
     "prettier": "prettier --write '**/*.{js,jsx,md,json,css}'",
-    "release": "yarn build:production && yarn test && yarn lint && lerna publish && yarn gh-pages",
+    "release": "yarn build:production && yarn test && yarn lint && lerna publish slate slate-react",
     "server": "webpack-dev-server --config ./support/webpack/config.js",
     "start": "npm-run-all --parallel --print-label watch server",
     "test": "cross-env BABEL_ENV=test FORBID_WARNINGS=true mocha --require babel-core/register ./packages/*/test/index.js",

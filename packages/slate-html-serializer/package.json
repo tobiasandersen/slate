@@ -1,5 +1,6 @@
 {
   "name": "slate-html-serializer",
+  "private": true,
   "description": "An HTML serializer for Slate editors.",
   "version": "0.7.36",
   "license": "MIT",
